@@ -88,6 +88,7 @@
     <property name="title">
      <string>帮助(&amp;H)</string>
     </property>
+    <addaction name="actionAbout"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_E"/>
@@ -425,10 +426,54 @@
      <normaloff>:/img/linenumber.svg</normaloff>:/img/linenumber.svg</iconset>
    </property>
    <property name="text">
-    <string>行号</string>
+    <string>显示行号(&amp;L)</string>
    </property>
    <property name="toolTip">
-    <string>行号</string>
+    <string>显示行号</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于(&amp;A)</string>
+   </property>
+   <property name="toolTip">
+    <string>关于</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionFontColor">
+   <property name="text">
+    <string>字体颜色</string>
+   </property>
+   <property name="toolTip">
+    <string>设置字体颜色</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionEditorBackgroundColor">
+   <property name="text">
+    <string>编辑器背景色</string>
+   </property>
+   <property name="toolTip">
+    <string>设置编辑器背景色</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionFontBackgroundColor">
+   <property name="text">
+    <string>字体背景色</string>
+   </property>
+   <property name="toolTip">
+    <string>字体背景色</string>
    </property>
    <property name="menuRole">
     <enum>QAction::MenuRole::NoRole</enum>
