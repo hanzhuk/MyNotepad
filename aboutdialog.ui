@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>关于</string>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
@@ -32,9 +32,9 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>80</x>
      <y>50</y>
-     <width>241</width>
+     <width>431</width>
      <height>41</height>
     </rect>
    </property>
@@ -68,7 +68,7 @@
     <rect>
      <x>80</x>
      <y>220</y>
-     <width>111</width>
+     <width>231</width>
      <height>16</height>
     </rect>
    </property>
@@ -81,8 +81,8 @@
     <rect>
      <x>190</x>
      <y>130</y>
-     <width>129</width>
-     <height>46</height>
+     <width>201</width>
+     <height>71</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
