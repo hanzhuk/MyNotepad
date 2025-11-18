@@ -74,6 +74,13 @@
     <property name="title">
      <string>格式(&amp;O)</string>
     </property>
+    <addaction name="actionLineWrap"/>
+    <addaction name="actionLineNumber"/>
+    <addaction name="actionFont"/>
+    <addaction name="actionFontColor"/>
+    <addaction name="separator"/>
+    <addaction name="actionFontBackgroundColor"/>
+    <addaction name="actionEditorBackgroundColor"/>
    </widget>
    <widget class="QMenu" name="menu_V">
     <property name="title">
