@@ -10,6 +10,8 @@ SearchDialog::SearchDialog(QWidget *parent,QPlainTextEdit * textEdit)
 
     pTextEdit = textEdit;
     ui->rbDown->setChecked(true);
+
+
 }
 
 SearchDialog::~SearchDialog()
@@ -20,6 +22,8 @@ SearchDialog::~SearchDialog()
 void SearchDialog::on_btFindNext_clicked()
 {
     QString target = ui->searchText->text();
+    if(target == "" || pTextEdit == nullptr)
+        return;
 
     QString text = pTextEdit->toPlainText();
     QTextCursor c=pTextEdit->textCursor();
