@@ -12,6 +12,9 @@ CodeEditor::CodeEditor(QWidget *parent) : QPlainTextEdit(parent)
 
     updateLineNumberAreaWidth(0);
     highlightCurrentLine();
+
+    hideLineNumberArea(false);
+
 }
 
 int CodeEditor::lineNumberAreaWidth()
@@ -42,6 +45,20 @@ void CodeEditor::updateLineNumberArea(const QRect &rect, int dy)
 
     if (rect.contains(viewport()->rect()))
         updateLineNumberAreaWidth(0);
+}
+
+void CodeEditor::hideLineNumberArea(bool flag)
+{
+    if(!flag){
+        lineNumberArea->hide();
+        setViewportMargins(0, 0, 0, 0);
+    }
+    else
+    {
+        lineNumberArea->show();
+        setViewportMargins(lineNumberAreaWidth(), 0, 0, 0);
+    }
+
 }
 
 void CodeEditor::resizeEvent(QResizeEvent *e)

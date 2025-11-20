@@ -23,6 +23,9 @@ private slots:
     void highlightCurrentLine();
     void updateLineNumberArea(const QRect &rect, int dy);
 
+public slots:
+    void hideLineNumberArea(bool flag);
+
 private:
     QWidget *lineNumberArea;
 };
